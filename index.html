@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>@dahromy</title>
+  <style>
+    /* Vos styles personnalisés ici */
+  </style>
+</head>
+<body>
+  <pre><code>
+    <?php
+    namespace DahRomy;
+
+    class About extends Me
+    {
+        public function getCurrentWorkplace(): array
+        {
+            return [
+                'workplace' => [
+                    'company' => 'MyAgency',
+                    'position' => 'PHP/Symfony developer'         
+                ]
+            ];
+        }
+
+        public function getDailyKnowledge(): array
+        {
+            return [
+                Php::class,
+                Javascript::class,
+                Symfony::class,
+                Vuejs::class,
+            ];
+        }
+
+        public function getFutureGoal(): string
+        {
+            return 'To contribute to open source.';
+        }
+    }
+    ?>
+  </code></pre>
+</body>
+</html>
